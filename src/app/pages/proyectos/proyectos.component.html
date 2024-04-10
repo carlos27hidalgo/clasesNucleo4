@@ -1,0 +1,16 @@
+<H1 style="text-align: center;">PROYECTOS</H1>
+
+<div>
+    <button class="btn btn-success" (click)="cambiar()">Ligth / Dark</button>
+
+        <div *ngIf="ver==true else abrir">
+            <app-tabla1></app-tabla1>
+        </div>
+
+        <ng-template #abrir>
+            <app-tabla2></app-tabla2>
+        </ng-template>
+        
+    
+   
+</div>

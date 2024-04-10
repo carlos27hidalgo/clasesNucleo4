@@ -1,0 +1,19 @@
+<table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">id</th>
+        <th scope="col">Url</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let proyecto of proyectos">
+        
+        <td>{{proyecto.nombre}}</td>
+        <td>{{proyecto.id}}</td>
+        <td>{{proyecto.url}}</td>
+      </tr>
+     
+    </tbody>
+  </table>

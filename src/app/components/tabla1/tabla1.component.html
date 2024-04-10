@@ -1,0 +1,27 @@
+<!--{{proyectos | json}}-->
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Url</th>
+        <th scope="col">Detalles</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let proyecto of proyectos">
+        
+        <td>{{proyecto.id}}</td>
+        <td>{{proyecto.nombre}}</td>
+        <td>{{proyecto.url}}</td>
+        <td>
+          <button [routerLink]="['/proyecto', proyecto.id]" class="btn btn-warning">
+            Detalles
+          </button>
+          <a href="proyecto/{{proyecto.id}}" class="btn btn-danger">detalles</a>
+        </td>
+      </tr>
+     
+    </tbody>
+  </table>
